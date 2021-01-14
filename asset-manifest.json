@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/crypto-task/static/js/main.f0915ffd.chunk.js",
+    "main.js.map": "/crypto-task/static/js/main.f0915ffd.chunk.js.map",
+    "runtime-main.js": "/crypto-task/static/js/runtime-main.eadbd4d6.js",
+    "runtime-main.js.map": "/crypto-task/static/js/runtime-main.eadbd4d6.js.map",
+    "static/css/2.679831fc.chunk.css": "/crypto-task/static/css/2.679831fc.chunk.css",
+    "static/js/2.e619abad.chunk.js": "/crypto-task/static/js/2.e619abad.chunk.js",
+    "static/js/2.e619abad.chunk.js.map": "/crypto-task/static/js/2.e619abad.chunk.js.map",
+    "static/js/3.f78d8ca4.chunk.js": "/crypto-task/static/js/3.f78d8ca4.chunk.js",
+    "static/js/3.f78d8ca4.chunk.js.map": "/crypto-task/static/js/3.f78d8ca4.chunk.js.map",
+    "index.html": "/crypto-task/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/crypto-task/static/css/2.679831fc.chunk.css.map",
+    "static/js/2.e619abad.chunk.js.LICENSE.txt": "/crypto-task/static/js/2.e619abad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eadbd4d6.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.e619abad.chunk.js",
+    "static/js/main.f0915ffd.chunk.js"
+  ]
+}
