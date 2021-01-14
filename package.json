@@ -1,27 +1,41 @@
 {
-  "name": "crypto-task",
+  "name": "new-ver",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bip38": "^3.1.1",
     "bitcoinjs-lib": "^5.2.0",
+    "loaders.css": "^0.1.2",
+    "normalize.css": "^8.0.1",
     "qrcode": "^1.4.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-loaders": "^3.0.1",
+    "react-loadingg": "^1.7.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
+    "typescript": "^4.0.3",
     "web-vitals": "^0.2.4",
     "wif": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn run validate && react-scripts build",
+    "lint": "eslint --ignore-path .gitignore",
     "test": "react-scripts test",
+    "prettier:format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|jsx|ts|tsx)\"",
+    "prettier:check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|json|jsx|ts|tsx)\"",
+    "check-types": "tsc",
+    "validate": "yarn run prettier:check-format && yarn run lint",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx, .",
+    "fix": "yarn run lint:fix && yarn run prettier:format",
+    "validate-ts": "yarn run check-types && yarn run validate",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +55,24 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/bip38": "^2.0.1",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/qrcode": "^1.3.5",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
+    "@types/wif": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
   }
 }
